@@ -32,7 +32,8 @@ function App() {
                 return;
             }
             const response = await axios.post(
-                "https://bugcatcher-ai-code-reviewer.onrender.com",
+                // "https://bugcatcher-ai-code-reviewer.onrender.com",
+                `${process.env.REACT_APP_API_URL}/api/gemini`,
                 { code }
             );
             setLoading(false);
