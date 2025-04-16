@@ -32,7 +32,7 @@ function App() {
                 return;
             }
             const response = await axios.post(
-                "https://bugcatcher-thfb.onrender.com/ai/get-review",
+                "https://bugcatcher-ai-code-reviewer.onrender.com",
                 { code }
             );
             setLoading(false);
